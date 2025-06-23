@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #ec9898;
+    background-image: url(imagebg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+}
+
+.heading {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(69, 65, 65);
+    text-decoration: underline;
+    word-spacing: 10px;
+    margin-top: auto;
+    padding-bottom: 40px;
+}
+
+
+.button {
+    text-align: right;
+}
+
+.button>button{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button button:hover {
+    background-color: white;
+    color: #ec9898;
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #444;
+}
+
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(35, 35, 35, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 550px;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.about,
+.contact {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.contact a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .button {
+        text-align: left;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    .gallery .grid {
+        grid-template-columns: 1fr;
+    }
+}
